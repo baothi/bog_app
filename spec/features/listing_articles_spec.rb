@@ -8,7 +8,7 @@ RSpec.feature "Listing Article" do
    end
    
    scenario "List all articles" do
-    vist "/"
+    visit "/"
     expect(page).to have_content(@article1.title)
     expect(page).to have_content(@article1.body)
     expect(page).to have_content(@article2.title)

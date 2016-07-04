@@ -7,7 +7,7 @@ RSpec.feature "Show an Article" do
   end
   
   scenario "A user updates an article" do
-      vist "/"
+      visit "/"
       click_link @article.title
       click_link "Edit Article"
       
@@ -20,7 +20,7 @@ RSpec.feature "Show an Article" do
   end
   
   scenario "A user to update an article" do
-      vist "/"
+      visit "/"
       click_link @article.title
       click_link "Edit Article"
       

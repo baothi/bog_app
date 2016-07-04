@@ -7,7 +7,7 @@ RSpec.feature "Show an Article" do
   end
   
   scenario "Display individual article" do
-      vist "/"
+      visit "/"
       click_link @article.title
       
       expect(page).to have_content(@article.title)
