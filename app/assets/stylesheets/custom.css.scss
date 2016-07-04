@@ -34,3 +34,31 @@ body {
 #new-article-btn {
   margin-bottom: 24px;
 }
+
+.alert-error {
+  background: #fedede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+}
+
+.alert-alert {
+  background: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+  text-align: left;
+}
+
+.alert-success {
+  background: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
+}
+
+.alert-notice {
+  background: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
+}
