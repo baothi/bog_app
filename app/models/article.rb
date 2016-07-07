@@ -2,6 +2,6 @@ class Article < ActiveRecord::Base
   validates :title, presence: true
   validates :body, presence: true
   
-  default_scope 
+  default_scope {order(created_at: :desc)}
   belongs_to :user
 end
