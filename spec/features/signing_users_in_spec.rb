@@ -3,18 +3,18 @@ require "rails_helper"
 RSpec.feature "Users sign-in" do
   
   before do
-    @john = User.create!(email: "john@example.com", password: "password")
+    @thi = User.create!(email: "baothi246@gmail.com", password: "password")
   end
   
   scenario "with valid creadentials " do
     visit "/"
     click_link "Sign in"
-    fill_in "Email", with: @john.email
-    fill_in "Password", with: @john.password
+    fill_in "Email", with: @thi.email
+    fill_in "Password", with: @thi.password
     click_button "Log in"
     
     expect(page).to have_content("Signed in successfully.")
-    expect(page).to have_content("Signed in as #{@john.email}")
+    expect(page).to have_content("Signed in as #{@thi.email}")
     
   end
 end
